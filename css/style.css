@@ -1,0 +1,361 @@
+header{
+    background-color: rgb(255, 255, 255);
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav .logo-container img{
+    width: 90px;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    margin: 10px;
+}
+header nav ul li a, .responsive-menu ul li a{
+    font-size: 14px;
+    color: black;
+}
+header nav ul li a:hover, .responsive-menu ul li a:hover{
+    color: rgb(65, 105, 227);
+}
+header nav ul li a.active, .responsive-menu ul li a.active{
+    color: rgb(65, 105, 227);
+}
+header nav ul li button, header .responsive-menu button{
+    border: none;
+    background-color: rgb(65, 105, 227);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+header nav ul li button i, header .responsive-menu li button i{
+    font-size: 14px;
+    margin-left: 4px;
+}
+header nav ul li select{
+    padding: 15px;
+    border: none;
+}
+
+/* Responsive Menu Code */
+header nav ul .menu{
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+}
+header .responsive-menu{
+    display: none;
+}
+header .responsive-menu ul li{
+    margin: 5px 0;
+    padding: 5px;
+}
+header .responsive-menu button{
+    width: 100%;
+    justify-content: center;
+}
+@media (max-width: 768px){
+    header nav ul:first-of-type{
+        display: none;
+    }
+    header nav ul li.login-btn{
+        display: none;
+    }
+    header nav ul .menu {
+        display: block;
+    }
+}
+
+/* Main Start */
+/*/ Main | Header Start /*/
+main .header{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgb(64,140,221);
+    background: linear-gradient(90deg, rgba(64,140,221,1) 0%, rgba(52,123,186,1) 45%, rgba(37,103,147,1) 100%);
+}
+main .header h1{
+    font-size: 36px;
+}
+main .header h2{
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+main .header .search-box{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+main .header .search-box .right{
+    align-items: center;
+    display: flex;
+    width: 90%;
+}
+main .header .search-box i{
+    color: rgb(74, 127, 166);
+    font-size: 20px;
+}
+main .header .search-box input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 600;
+    color: rgb(74, 127, 166);
+}
+main .header .search-box input:focus{
+    border: none;
+}
+main .header .left button{
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(130, 130, 130);
+    cursor: pointer;
+}
+main .header .trends{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .header .trends button{
+    background-color: rgb(127, 167, 197);
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+main .header .trends button:last-child{
+    background-color: white;
+    color: black;
+}
+@media (max-width: 900px){
+    main .header h1{
+        font-size: 28px;
+    }
+    main .header h2{
+        font-size: 22px;
+    }
+    main .header .search-box{
+        padding: 10px;
+    }
+}
+@media (max-width: 550px){
+    main .header h1{
+        font-size: 24px;
+    }
+    main .header h2{
+        font-size: 18px;
+    }
+}
+
+/*/ Trends Characters | Main Start /*/
+.trends-characters .characters-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+.trends-characters .characters-box .character{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: .1px .1px 1px black;
+    border-radius: 10px;
+}
+.trends-characters .characters-box .character:hover{
+    box-shadow: 1px 1px 5px black;
+}
+.trends-characters .characters-box .character .image img{
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.trends-characters .characters-box .character .info{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.trends-characters .characters-box .character .info .char-name{
+    line-height: 30px;
+    font-weight: bolder;
+}
+.trends-characters .characters-box .character .info .char-bio{
+    color: rgb(145, 145, 145);
+    font-weight: bold;
+}
+
+/*/ Trends Companys | Main Start /*/
+.trends-companys .companys-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+.trends-companys .companys-box .company{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: .1px .1px 1px black;
+    border-radius: 10px;
+}
+.trends-companys .companys-box .company:hover{
+    box-shadow: 1px 1px 5px black;
+}
+.trends-companys .companys-box .company .image{
+    padding: 20px;
+}
+.trends-companys .companys-box .company .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.trends-companys .companys-box .company .info{
+    text-align: center;
+    padding: 10px;
+}
+
+/*/ Catgs Choosen | Main Start /*/
+.catgs-choosen .catgs-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+.catgs-choosen .catgs-box .catg{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: .1px .1px 1px black;
+    border-radius: 10px;
+}   
+.catgs-choosen .catgs-box .catg:hover{
+    box-shadow: 1px 1px 5px black;
+}
+.catgs-choosen .catgs-box .catg .image{
+    padding: 20px;
+}
+.catgs-choosen .catgs-box .catg .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.catgs-choosen .catgs-box .catg .info{
+    text-align: center;
+    padding: 10px;
+}
+
+/* Footer Start */
+footer{
+    background-color: rgb(248, 249, 250);
+    padding: 20px 0;
+}
+footer .footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .info, .footer .links{
+    width: 45%;
+}
+.footer .links .col{
+    width: 45%;
+}
+.footer .info .logo img{
+    width: 150px;
+}
+.footer .info h3{
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(79, 79, 79);
+}
+.footer .info .social{
+    display: flex;
+    align-items: center;
+}
+.footer .info .social h4{
+    font-size: 18px;
+}
+.footer .info .social ul{
+    display: flex;
+    align-items: center;
+}
+.footer .info .social ul li{
+    margin: 8px;
+}
+.footer .info .social ul li i{
+    font-size: 22px;
+    color: rgb(81, 81, 82);
+}
+.footer .links{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+.footer .links .col h4{
+    font-size: 16px;
+}
+.footer .links .col ul li{
+    margin: 14px 5px;
+}
+.footer .links .col ul li a{
+    color: rgb(130, 130, 130);
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+  .footer{
+    flex-direction: column;
+    /* text-align: center; */
+    width: 100%;
+  }
+  .footer .info, .footer .links{
+    width: 100%;
+  }
+
+  .footer .info .logo img {
+    width: 100px;
+  }
+
+  .footer .info h3 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .footer .info .social h4 {
+    font-size: 16px;
+  }
+
+  .footer .info .social ul li {
+    margin: 4px;
+  }
+
+  .footer .info .social ul li i {
+    font-size: 18px;
+  }
+
+  .footer .links .col ul li {
+    margin: 8px 5px;
+  }
+
+  .footer .links .col h4 {
+    font-size: 14px;
+  }
+}
