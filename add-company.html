@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MnHum | Add Character</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/add-character.css">
+    <title>MnHum | Add Company</title>
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="css/add-company.css">    
 </head>
 <body>
+    
     <!-- Header Start -->
     <header>
         <div class="container">
@@ -101,7 +102,7 @@
                             </div>
                         </div>
                         <div class="info-add">
-                            <h2 class="title">معلومات عامة</h2>
+                            <h2 class="title">معلومات المؤسسة</h2>
                             <div class="input-group">
                                 <div class="input-row">
                                     <label for="arab-name">الاسم باللغة العربية</label>
@@ -112,21 +113,9 @@
                                     <input type="text" id="engl-name">
                                 </div>
                             </div>
-                            <label for="birthday">تاريخ الميلاد</label>
-                            <br>
-                            <input type="date" id="birthday" class="full-input">
-                            
-                            <div class="wrapper">
-                                <label class="title">الجنس</label>
-                                <input type="radio" name="select" id="option-1" checked>
-                                <label for="option-1" class="option option-1"><span>ذكر</span></label>
-                                <input type="radio" name="select" id="option-2">
-                                <label for="option-2" class="option option-2"><span>انثى</span></label>
-                            </div>
-                            <br>
                             <div class="input-group">
                                 <div class="input-row">
-                                    <label for="country">الجنسية</label>
+                                    <label for="country">الدولة</label>
                                     <select id="country">
                                         <option value="">اختر البلد</option>
                                         <option value="">السعودية</option>
@@ -137,17 +126,11 @@
                                     </select>
                                 </div>
                                 <div class="input-row">
-                                    <label for="live-count">بلد الاقامة</label>
-                                    <select id="live-count">
-                                        <option value="">اختر بلد الاقامة</option>
-                                        <option value="">السعودية</option>
-                                        <option value="">مصر</option>
-                                        <option value="">الاردن</option>
-                                        <option value="">العراق</option>
-                                        <option value="">قطر</option>
-                                    </select>
+                                    <label for="main-comp">الفرع الرئيسي</label>
+                                    <input type="text" id="main-comp">
                                 </div>
                             </div>
+                            <br>
                             <label for="catg">التصنيف</label>
                             <select id="catg" class="full-input">
                                 <option value="">اختر التصنيف</option>
@@ -156,8 +139,35 @@
                                 <option value="">الاستشارات الادارية</option>
                                 <option value="">العمل الاجتماعي</option>
                             </select>
-                            <label for="job">المهنة الحالية</label>
-                            <input type="text" class="full-input">
+                            <h2 class="title">معلومات التواصل</h2>
+                            <div class="input-group">
+                                <div class="input-row">
+                                    <label for="phone">رقم الهاتف</label>
+                                    <input type="text" id="phone">
+                                </div>
+                                <div class="input-row">
+                                    <select id="number">
+                                        <option value="">الرمز الدولي</option>
+                                        <option value="">+966</option>
+                                        <option value="">+971</option>
+                                        <option value="">+973</option>
+                                        <option value="">+968</option>
+                                        <option value="">+979</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-row">
+                                    <label for="online-location">الموقع الالكتروني</label>
+                                    <input type="text" id="online-location">
+                                </div>
+                                <div class="input-row">
+                                    <label for="network-location">عنوان الشبكة</label>
+                                    <input type="text" id="network-location">
+                                </div>
+                            </div>
+                            <label for="email">البريد الالكتروني</label>
+                            <input type="text" class="full-input" id="email">
                             <button>استمرار</button>
                         </div>
                     </div>
@@ -176,7 +186,7 @@
                             </div>
                         </div>
                         <div class="info-add">
-                            <label for="info">معلومات عن الشخصية</label>
+                            <label for="info">معلومات عن الشركة</label>
                             <br>
                             <textarea id="info" cols="30" rows="10"></textarea>
                             <br>
@@ -188,8 +198,8 @@
         </div>
     </main>
     <!-- Main End -->
-
-    <!-- Footer Start -->
+    
+        <!-- Footer Start -->
     <footer>
         <div class="container">
             <section class="footer">
