@@ -1,0 +1,93 @@
+/* Main Start */
+/*/ Header Start /*/
+.header{
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 40px;
+    height: fit-content;
+    background: rgb(64,140,221);
+    background: linear-gradient(90deg, rgba(64,140,221,1) 0%, rgba(52,123,186,1) 45%, rgba(37,103,147,1) 100%);
+}
+.header h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media (max-width: 900px){
+    main .header h2{
+        font-size: 22px !important;
+    }
+}
+@media (max-width: 550px){
+    main .header h2{
+        font-size: 16px !important;
+    }
+}
+
+/* Content Start */
+main .content .heading{
+    margin-bottom: 20px !important;
+    font-size: 20px;
+}
+main .content .small-heading{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+main .content .small-heading span{
+    color: rgba(37,103,147,1);
+}
+main .content .contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 30px;
+    margin: 20px 0;
+}
+main .content .contact-form .heading{
+    text-align: right;
+}
+main .content .contact-form p{
+    margin: 10px 0;
+}
+main .content .contact-form .input-row{
+    display: flex;
+    flex-direction: column;
+}
+main .content .contact-form .input-row label{
+    font-weight: 500;
+}
+main .content .contact-form .input-row input, main .content .contact-form .input-row select, main .content .contact-form .input-row textarea{
+    margin: 10px;
+    margin-right: 0 !important;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+main .content .contact-form button{
+    padding: 10px;
+    background-color: rgb(64,140,221);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+main .content .contact-image{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+main .content .contact-image img{
+    width: 50%;
+}
+@media (max-width: 768px){
+    main .content .contact{
+        grid-template-columns: 1fr !important;
+    }
+    main .content .contact-image{
+        display: none;
+    }
+}
